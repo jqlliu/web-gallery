@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <script type="module" src="js/index.mjs"></script>
+        <title>Web Gallery</title>
+        <link href="style/main.css" rel="stylesheet" type="text/css" />
+        <link href="style/comment.css" rel="stylesheet" type="text/css" />
+        <link href="style/form.css" rel="stylesheet" type="text/css" />
+        <link href="style/image.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <a href="./index.html" id="title">Web Gallery</a>
+            <button id="sign-out" class = "invisible">Sign out</button>
+        </header>
+
+        <div id="error-message"></div>
+        <!--Account-->
+        <div id = "account" class = "">
+            <form class="complex_form" id="account_form">
+                <div class="form_title">Account</div>
+                <input
+                    type="text"
+                    id="username"
+                    class="form_element"
+                    placeholder="Username"
+                    name="title"
+                    required />
+                <input
+                    type="password"
+                    id="password"
+                    class="form_element"
+                    placeholder="Password"
+                    name="author"
+                    required />
+                    <input type="button" class="btn" id = "sign-up-btn" value = "Sign up">
+                    <input type="button" class="btn" id = "sign-in-btn" value = "Sign in">
+            </form>
+        </div>
+        <!--App-->
+        <div id = "app" class = "gone">
+            <form class="complex_form" id="select_account_form">
+                <div class="form_title">Gallery</div>
+                <input type="button" value = "" class="btn" id = "sel0"  />
+                <input type="button" value = "" class="btn" id = "sel1"  />
+                <input type="button" value = "" class="btn" id = "sel2"  />
+                <input type="button" value = "" class="btn" id = "sel3"  />
+                <input type="button" value = "" class="btn" id = "sel4"  />
+                <input type="button" value = "" class="btn" id = "sel5"  />
+
+                <input type="button" value = "Previous" class="btn" id = "account-prev" />
+                <input type="button" value = "Next" class="btn" id = "account-next" />
+            </form>
+            <!--Image display-->
+            <div id="image-display">
+                <div id="image-bar">
+                    <button id="btn-left">&lt;</button>
+                    <div id="image-holder">
+
+                        <img src="./media/no_image.png" id="image" />
+                    </div>
+                    <button id="btn-right">&gt;</button>
+                </div>
+                <div id="image-title">No images yet</div>
+                <div id="image-body">
+                    <div id="image-author">Add an image by using the form below</div>
+                    <div id="image-delete">X</div>
+                </div>
+            </div>
+
+
+            <!--Image adding form-->
+            <form class="complex_form" id="add_image_form">
+                <div class="form_title">Add image</div>
+                <input
+                    type="text"
+                    id="post_title"
+                    class="form_element"
+                    placeholder="Title"
+                    name="title"
+                    required />
+
+                <input
+                    type="file"
+                    name="picture"
+                    class="form_element" required />
+                <button type="submit" class="btn">Post image</button>
+            </form>
+
+            <!--Post comment form-->
+            <form class="complex_form" id="post_message_form">
+                <div class="form_title">Post comment</div>
+                <textarea
+                    rows="5"
+                    id="comment_content"
+                    class="form_element_full"
+                    name="comment_message"
+                    placeholder="Message"
+                    required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <!--Current comments-->
+            <div id="comments">
+            </div>
+
+            <div id="comment-page">
+                <button id="page-left">&lt;</button>
+                <div id="page">1</div>
+                <button id="page-right">&gt;</button>
+            </div>
+        </div>
+        <footer>
+            <a href="./credits.html">credits</a>
+        </footer>
+    </body>
+
+</html>

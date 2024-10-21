@@ -1,0 +1,77 @@
+.complex_form {
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: rgb(66, 77, 97);
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .complex_form .form_title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: -20px -10px 20px -10px;
+    padding: 5px 0px 5px 40px;
+    color: white;
+    background-color: #9aaacb;
+    border-radius: 2px 2px 0px 0px;
+  }
+  
+  .complex_form .form_radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .complex_form input, .complex_form textarea{
+    margin-bottom: 3px;
+    margin-right: 3px;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 3px 10px 3px 10px;
+    background-color: #313131;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .complex_form input::placeholder,.complex_form textarea::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .complex_form input:focus,.complex_form textarea:focus {
+    outline: none;
+    
+  }
+
+  .complex_form .form_element {
+    width: calc(50% - 28px);
+  }  
+  .complex_form .form_element_full {
+    width: 100%;
+  }
+  
+
+
+  
+  /* This snippet of code was generated using: http://css3buttongenerator.com/ */
+  
+  .btn {
+    margin-bottom:  3px;
+    margin-right: 3px;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 3px 10px 3px 10px;
+    width: calc(50% - 5px);
+    color: #7791ce;
+    background: #313131;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace
+  }
+  
+  .btn:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  

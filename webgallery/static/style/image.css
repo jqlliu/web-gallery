@@ -1,0 +1,93 @@
+
+
+
+#image-display {
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: rgb(66, 77, 97);
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  #image-bar #image-holder{
+    width: 70vh;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  #image-holder #image{
+    max-height: 50vh;
+    max-width: 70vh;
+    min-width: 50px;
+    min-height: 50px;
+    min-height: none;
+    object-fit:scale-down;
+
+  }
+  #image-display #image-bar{
+    display: flex;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #image-display button{
+    font-size: 50px;
+    background-color: transparent;
+    border:0px;
+    color: rgb(223, 199, 199);
+    padding: 20px;
+    border-radius: 10px;
+    transition: opacity 0.1s, background-color 0.3s;
+    opacity: 0.5;
+  }
+
+  #image-display button:hover{
+    background-color: rgb(45, 52, 66);
+    opacity: 1;
+  }
+  
+
+  #image-display #image-title{
+    font-size: 20px;
+    text-align: center;
+    width: calc(100% - 32px);
+    word-wrap: break-word;
+  }  
+
+  #image-display #image-author{
+    font-size: 17px;
+    text-align: center;
+    width: calc(100% - 32px);
+    font-size: 15px;
+    word-wrap: break-word;
+  }
+  
+  #image-delete{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border-radius:100%;
+    background-color: rgb(239, 98, 98);
+    opacity: 0.1;
+    color: white;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: opacity 0.1s;
+  }
+  #image-delete:hover{
+    background-color: rgb(255, 0, 0);
+    opacity: 1;
+  }
+  #image-body{
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+  }
